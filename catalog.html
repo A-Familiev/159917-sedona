@@ -1,11 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
         <title>Sedona - Гостиницы</title>
     </head>
     <body>
-        <div class="font">
         <!-- Header -->    
             <header class="main-header">
                 <div class="container">
@@ -18,7 +18,7 @@
                                 <a href="#">фото и видео</a>
                             </li>
                             <li class="logo">
-                                <a href="index.html"><img src="img/logo_sedona_mini.jpg" width="" height="" alt="Sedona"></a>
+                                <a href="index.html"><img src="img/logo_sedona_mini.jpg" width="67" height="56" alt="Sedona"></a>
                             </li>
                             <li>
                                 <a href="#">Карта штата</a>
@@ -30,8 +30,10 @@
                   </nav>
             </div>    
         </header>
-    <!-- End Header -->        
+    <!-- End Header -->
+    <!-- Main -->        
             <main class="main-content">
+                <!-- Filter -->
                 <section class="filter">
                     <form class="form-filter" action="#">
                         <fieldset class="filter-infrastructure" title="Инфраструктура">
@@ -54,51 +56,72 @@
                         </fieldset>
                         <fieldset class="filter-price" title="Стоимость">
                            <legend>Стоимость в сутки (р):</legend>
-                            <div class="filter-price-top">
-                            <label for="filter-min-price">от</label>
-                            <input type="text" name="min-price" value="0" class="min-price" id="filter-min-price">
-                            </div>
-                            <div class="filter-price-top">
-                            <label for="filter-max-price">до</label>
-                            <input type="text" name="max-price" value="3000" class="max-price" id="filter-max-price">
-                            </div>
-                            <div class="range-price">
-                            <div class="scale">
-                                <div class="bar" ></div>
-                            </div>
-                            <div class="toggle min-toggle"></div>
-                            <div class="toggle max-toggle"></div>
-                            </div>
+                                <div class="filter-price-top">
+                                    <label for="filter-min-price">от</label>
+                                    <input type="text" name="min-price" value="0" class="min-price" id="filter-min-price">
+                                </div>
+                                    <div class="filter-price-top">
+                                    <label for="filter-max-price">до</label>
+                                    <input type="text" name="max-price" value="3000" class="max-price" id="filter-max-price">
+                                </div>
+                                <div class="range-price">
+                                    <div class="scale">
+                                        <div class="bar" ></div>
+                                    </div>
+                                    <div class="toggle min-toggle"></div>
+                                    <div class="toggle max-toggle"></div>
+                                </div>
                         </fieldset>
                         <input type="submit" value="Показать">
                         </form>
                 </section>
+                <!-- End Filter -->
+                <!-- Sort -->
+                <section class="sort">
+                    <div class="sort-found">Найдено: <span>3</span></div>
+                    <div class="sort-type">
+                        <p class="sort-title">Сортировка:</p>
+                        <ul class="sort-list">
+                            <li><a href="#" class="active" name="price">По цене</a></li>
+                            <li><a href="#" class="disabled" name="type">По типу</a></li>
+                            <li><a href="#" class="disabled" name="rating">По рейтингу</a></li>
+                        </ul>
+                    </div>
+                    <div class="sort-ranking">
+                        <a href="#" class="sort-ranking-high"></a>
+                        <a href="#" class="sort-ranking-low active"></a>
+                    </div>
+                 </section>
+                <!-- End Sort -->
+                <!-- Results -->
                 <section class="results">
                     <article class="results-item">
                         <div class="results-item-foto">
                             <img src="img/amara-resort-spa.jpg" alt="Amara Resort & SPA" height="90"        width="135">
                         </div>
                         <div class="results-item-description">
-                            <h2 class="results-item-title"><a href="#">Amara Resort & Spa</a></h2>
-                            <div class="results-item-text">
-                                <span>Гостиница</span>
-                                <span>от з500р</span>
+                            <div class="results-item-title">
+                                <h2><a href="#">Amara Resort & Spa</a></h2>
+                                <div class="results-item-text">
+                                    <span>Гостиница</span>
+                                    <span>от 3500р</span>
+                                </div>
                             </div>
+                            <div class="rating-stars">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                         </div>       
+                         <div class="result-item-reserve">
                             <div class="results-item-buttons">
                                 <a href="#" class="button-details">Подробнее</a>
                                 <a href="#" class="button-reserve">Забронировать</a>
-                            </div>
-                            <div class="results-item-rating">
-                                <div class="rating-stars">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                                <div class="rating-text">Рейтинг: 8,5</div>
-                            </div>
-                        </div>
+                            </div> 
+                            <div class="rating-text">Рейтинг: 8,5</div> 
+                        </div>      
                     </article>
                     <article class="results-item">
                         <div class="results-item-foto">
@@ -148,7 +171,9 @@
                         </div>
                     </article>
                 </section>
+                <!-- End Results -->
             </main>
+<!-- End Main -->            
 <!-- Footer -->  
     <footer class="main-footer">
         <div class="container">
@@ -161,11 +186,10 @@
                 <a href="#" class="social social-ytb"></a>
           </div>
           <div class="footer-copyright">
-              <a href="#" class="academy"><img src="img/logo_html_acafemy.jpg" alt="Лого"></a>
+              <a href="#"><img src="img/logo_html_academy.jpg" alt="Лого"></a>
           </div>
        </div>      
     </footer>
-<!-- End Footer -->    
-        </div>    
+<!-- End Footer -->         
     </body>
     
